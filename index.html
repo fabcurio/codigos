@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>fadgames</title>
+
+	</head>
+
+	<body>
+
+		{% for noticia in  noticias%}
+			<h1>{{noticia.titulo}}</h1>
+			<img src="{{MEDIA_URL}}{{noticia.imagen}}">
+			<p>{{noticia.contenido}}</p>
+		{% endfor %}
+
+	</body>
+
+</html>
